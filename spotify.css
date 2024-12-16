@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Outfit:wght@300&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    font-family: 'Outfit';
+}
+/* navigation */
+.container1{
+    display: flex;
+    justify-content: space-between;
+}
+.navigation{
+    width: 400px;
+    padding: 20px;
+    background-color: black;
+    position: fixed;
+    left: 0;
+}
+.card{
+    width: 350px;
+    padding: 20px;
+    background-color: rgb(18,18,18);
+}
+.spotifylogo{
+    height: 50px;
+    width: 170px;
+    background: url(images/Spotify\ Logo.png);
+    background-size: cover;
+}
+.nav1{
+    padding: 20px;
+}
+.nav1 li{
+    list-style: none;
+    margin-top: 10px;
+    color: rgb(179,179,179);
+    font-size: 20px;
+    margin-left: 10px;
+    font-family: 'Kanit';
+}
+.nav1 li:hover{
+    color: white;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 2s ease infinite;
+}
+.nav2{
+    margin-top: 30px;
+}
+.nav2 li{
+    list-style: none;
+    color: rgb(179,179,179);
+    font-size: 20px;
+    margin-left: 10px;
+}
+.nav2 li:hover{
+    color: white;
+}
+.plusicon{
+    margin-left: 120px;
+}
+.navbtn{
+    background-color: rgb(78,80,79);
+    color: white;
+    width: 300px;
+    margin-top: 40px;
+}
+.phead{
+    font-size: 20px;
+}
+.navbtn1{
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    margin-left: 20px;
+    background-color: white;
+}
+/* .navigation2 */
+.navigation2{
+    margin-left: 387px;
+}
+.navv2{
+    width: 900px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    position: fixed;
+    z-index: 20;
+}
+
+.form{
+   text-align: center;
+}
+.signin{
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    height: 40px;
+    width: 100px;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.login{
+    background-color: rgb(26,178,107);
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 100px;
+    color: white;
+    font-size: 18px;
+    border-radius: 20px;
+    margin-left: 60px;
+}
+.fa-arrow-left,.fa-arrow-right{
+    font-size: 20px;
+    color: white;
+}
+
+/* signin form  */
+.success{
+    border-bottom: 2px solid green;
+    box-shadow: 0px 2px 10px 2px green inset;
+}
+.fail{
+    box-shadow: 0px 2px 10px 2px red inset;
+    border-bottom: 2px solid red;
+}
+.signinform,.signinform2{
+    display: none;
+    margin-top: 80px;
+    padding-top: 20px;
+    padding-left: 20px;
+    height: 530px;
+    width: 900px;
+    position: fixed;
+    z-index: 40;
+    background-color: rgb(18,18,18);
+    color: white;
+}
+.log{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+.cutt{
+    display: flex;
+}
+.close,.close1{
+    margin-left: 700px;
+    padding: 4px;
+    border-radius: 10px;
+    background-color: black;
+    cursor: pointer;
+}
+input{
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 300px;
+    margin-top: 20px;
+}
+.signbtn{
+    background-color: rgb(26,178,107);
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 100px;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-left: 60px;
+}
+.signbtn2{
+    background-color: rgb(26,178,107);
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 100px;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-left: 60px;
+    margin-top: 50px;
+}
+
+/* playlist */
+.playlist{
+    margin-top: 100px;
+    width: 900px;
+}
+.playlist h2{
+    color: white;
+}
+.fa-heart{
+    color:rgb(26,178,107) ;
+    transition: all 2s;
+}
+.fa-heart:hover{
+    color: orangered;
+}
+.chennai,.bollywood,.tollywood,.mollywood{
+    background-color: rgb(23,23,23);
+    height: 180px;
+    width: 180px;
+    text-align: center;
+    position: relative;
+}
+.spotifytittle{
+    background: linear-gradient(to left, red ,yellow,green);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 2s ease infinite;
+    transition: all ;
+}
+@keyframes gradient{
+    0%{
+        background: linear-gradient(to left, rgb(89, 0, 255) ,rgb(221, 221, 12),rgb(128, 0, 53));
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 1s;
+    }
+    100%{
+        background: linear-gradient(to left, rgb(255, 136, 0) ,rgb(12, 155, 221),rgb(128, 0, 70));
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 1s;
+    }
+}
+.chennai:hover{
+    box-shadow: 0px 0px 5px 1px white;
+    scale: 1.1;
+    transition: all 1s;
+}
+.bollywood:hover{
+    box-shadow: 0px 0px 5px 1px white;
+    scale: 1.1;
+    transition: all 1s;
+}
+.tollywood:hover{
+    box-shadow: 0px 0px 5px 1px white;
+    scale: 1.1;
+    transition: all 1s;
+}
+.mollywood:hover{
+    box-shadow: 0px 0px 5px 1px white;
+    scale: 1.1;
+    transition: all 1s;
+}
+.chennaiimage{
+    height: 150px;
+    width: 100px;
+    background: url(images/The\ Sound\ of\ Chennai.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 20px;
+}
+.bollyimage{
+    height: 150px;
+    width: 100px;
+    background: url(images/The\ Sound\ of\ Bengaluru.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 20px;
+}
+.tollyimage{
+    height: 150px;
+    width: 100px;
+    background: url(images/The\ Sound\ of\ Hyderabad.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 20px;
+}
+.mollyimage{
+    height: 150px;
+    width: 100px;
+    background: url(images/The\ Sound\ of\ Kolkata.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 20px;
+}
+.chennaitittle,.bollytittle,.mollytittle,.tollytittle{
+    color: white;
+    font-size: 15px;
+    margin-top: 10px;
+}
+.play,.bplay,.tplay,.mplay{
+    background-color: rgb(26,178,107);
+    padding: 15px;
+    position: absolute;
+    margin-top: 50px;
+    font-size: 20px;
+    margin-left: 100px;
+    border-radius: 50%;
+    display: none;
+}
+.playcard{
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding-bottom: 20px;
+}
+.slide{
+    margin-top: 20px;
+}
+.carousel-item{
+    height: 400px;
+}
+.ayalaan{
+    background: url(images/ayalaan-teaser-poster-hd-1080p-wallpaper-5651594.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bachelor{
+    background: url(images/bachelor.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.m96{
+    background: url(images/96.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* favourite list */
+.favolist{
+    margin-top: 10px;
+    width: 900px;
+}
+.popmelody,.Yuvan,.hariharan,.Maroon5,.Shan,.Justin,.dj,.Intermelody,.year2022{
+    background-color: rgb(23,23,23);
+    height: 180px;
+    width: 180px;
+    text-align: center;
+}
+.favoimage{
+    height: 100px;
+    width: 100px;
+    background: url(images/disc.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 20px;
+    animation: rotate 2s  linear infinite;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+        transition: all;
+    }
+    100%{
+        transform: rotate(360deg);
+        transition: all;
+    }
+}
+.popmelody,.Yuvan,.hariharan,.Maroon5,.Shan,.Justin,.dj,.Intermelody,.year2022 p{
+    color: white;
+    padding-top: 10px;
+}
+.popmelody:hover,.Yuvan:hover,.hariharan:hover,.Maroon5:hover,.Shan:hover,.Justin:hover,.dj:hover,.Intermelody:hover,.year2022:hover{
+    box-shadow: 0px 0px 5px 1px white;
+    scale: 1.1;
+    transition: all 0.7s;
+}
+.favogrid{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+/* songs*/
+.songs{
+    margin-top: 10px;
+    width: 900px;
+}

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="spotify.css">
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script defer src="spotify.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid container1 ">
+        <section class="navigation">
+            <div class="card  nav1">
+                <div class="spotifylogo"></div>
+                <li><i class="fa-solid fa-house"></i> &nbsp; Home</li>
+                <li><i class="fa-solid fa-magnifying-glass"></i> &nbsp;Search</li>
+                <li><i class="fa-solid fa-plus"></i> &nbsp;Add Playlist</li>
+                <li><i class="fa-brands fa-stack-overflow"></i> &nbsp;Your playlist</li>
+            </div>
+            <div class="card nav2">
+                <li><i class="fa-solid fa-list"></i> &nbsp; Your Library <i class="fa-solid fa-plus plusicon"></i></li>
+                <div class="card navbtn">
+                    <p class="phead"><b>Create Your First Playlist</b></p>
+                    <p>it's easy. we'll help you</p>
+                    <button class="navbtn1">Create Playlist</button>
+                </div>
+            </div>
+        </section>
+        <section class="navigation2 ">
+            <div class="navv2 card">
+                <div class="arrow">
+                    <i class="fa-solid fa-arrow-left"></i> &nbsp;
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <div class="form">
+                    <button class="signin">Signin</button>
+                    <button class="login">Login</button>
+                </div>
+            </div>
+            <div class="container-fluid signinform">
+                <span class="close">&#x274C;&nbsp; close</span>
+                <div class="log">
+                    <div class="sfrom">
+                        <form action="" class="eval">
+                            <h2>Sign in </h2>
+                            <input type="email" placeholder="Email Address" required><br>
+                            <input type="text" class="username" placeholder="username"><br>
+                            <input type="password" class="password" placeholder="password"><br>
+                            <input type="text" class="cnfrm" placeholder="Reenter password">
+                            <p class="valid"></p>
+                            <button type="submit" class="signbtn"> signin</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid signinform2">
+                <span class="close1">&#x274C;&nbsp; close</span>
+                <div class="log"> 
+                    <div class="lfor">
+                        <form action="">
+                            <h2>Login </h2>
+                            <input type="email" placeholder="Email Address" required><br>
+                            <input type="password" class="password2" placeholder="password"><br>
+                            <a href="">Forget Password ?</a>
+                            <button type="submit" class="signbtn2"> Login</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="card playlist">
+                <h2><span class="spotifytittle">Spotify PlayList &nbsp;.... </span>&nbsp;<i class="fa-solid fa-heart"></i></h2>
+                <div class="playcard ">
+                    <div class="card chennai">
+                        <div class="chennaiimage"></div>
+                        <p class="chennaitittle">Chennai Folks</p>
+                        <i class="fa-solid fa-play play"></i>
+                    </div>
+                    <div class="card bollywood">
+                        <div class="bollyimage"></div>
+                        <p class="bollytittle">Bollywood</p>
+                        <i class="fa-solid fa-play bplay"></i>
+                    </div>
+                    <div class="card tollywood">
+                        <div class="tollyimage"></div>
+                        <p class="tollytittle">Tollywood</p>
+                        <i class="fa-solid fa-play tplay"></i>
+                    </div>
+                    <div class="card mollywood">
+                        <div class="mollyimage"></div>
+                        <p class="mollytittle">Mollywood</p>
+                        <i class="fa-solid fa-play mplay"></i>
+                    </div>
+                </div>
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active ayalaan">
+                      </div>
+                      <div class="carousel-item bachelor">
+                      </div>
+                      <div class="carousel-item m96">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+            <div class="card favolist">
+                <h2><span class="spotifytittle">Favourite List &nbsp;.... </span></h2>
+                <div class="favogrid">
+                    <div class="card popmelody">
+                        <div class="favoimage"></div>
+                        <p>Pop Melody</p>
+                    </div>
+                    <div class="card Yuvan">
+                        <div class="favoimage"></div>
+                        <p>Yuvan Hits</p>
+                    </div>
+                    <div class="card hariharan">
+                        <div class="favoimage"></div>
+                        <p>Hariharan</p>
+                    </div>
+                    <div class="card Maroon5">
+                        <div class="favoimage"></div>
+                        <p>Maroon5</p>
+                    </div>
+                    <div class="card Shan">
+                        <div class="favoimage"></div>
+                        <p>ShanMandis</p>
+                    </div>
+                    <div class="card Justin">
+                        <div class="favoimage"></div>
+                        <p>Justin Beiber</p>
+                    </div>
+                    <div class="card dj">
+                        <div class="favoimage"></div>
+                        <p>DJ Mix</p>
+                    </div>
+                    <div class="card Intermelody">
+                        <div class="favoimage"></div>
+                        <p>Inter Melody</p>
+                    </div>
+                    <div class="card year2022">
+                        <div class="favoimage"></div>
+                        <p>2022</p>
+                    </div>
+                </div>
+            </div>
+            <div class="songs card">
+                <h2><span class="spotifytittle">Songs </span></h2>
+                <div class="songslist">
+                    <table class="table table-dark table-striped">
+                        <th>S.No</th>
+                        <th>Song</th>
+                        <th>Duration</th>
+                        <tr>
+                            <td>1</td>
+                            <td class="avalplay">Aval(pop Melody)</td>
+                            <td><audio src="song/Aval.mp3" class="aval"></audio> 4.60</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td class="bonesplay">bones</td>
+                            <td><audio src="song/Bones_320(PaglaSongs).mp3" class="bones"></audio> 4.60</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td class="middleplay">Middle of a night</td>
+                            <td><audio src="song/Elley-Duhe-Middle-of-the-Night.mp3" class="middle"></audio> 4.60</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td class="hawaiiplay">Hawaii</td>
+                            <td><audio src="song/Harleys-In-Hawaii.mp3" class="hawaii"></audio> 4.60</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td class="ilakanaplay">illakanakavithai</td>
+                            <td><audio src="song/Ilakkana Kavithai_320(PagalWorldl).mp3" class="ilakana"></audio> 4.60</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td class="infectedplay">infected</td>
+                            <td><audio src="song/Infected_320(PagalWorld).mp3" class="infected"></audio> 4.60</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td class="innumplay">Innum-Konjam-Neram</td>
+                            <td><audio src="song/Innum-Konjam-Neram.mp3" class="innum"></audio> 4.60</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td class="jalaplay">Jalabulajangu</td>
+                            <td><audio src="song/Jalabulajangu-MassTamilan.fm.mp3" class="jala"></audio> 4.60</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td class="manjalplay">Hawaii</td>
+                            <td><audio src="song/Manjal-Veiyil.mp3" class="manjal"></audio> 4.60</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td class="mudhalplay">Hawaii</td>
+                            <td><audio src="song/Mudhal-Nee-Mudivum-Nee-Title-Track-MassTamilan.io.mp3" class="mudhal"></audio> 4.60</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </div>
+</body> 
+
+</html>
